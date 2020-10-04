@@ -14,6 +14,7 @@ class App extends Component {
 
     // Edit hobby
     switchHobbyHandler = ( event, id ) => {
+
         const personIndex = this.state.persons.findIndex(p => {
             return p.id === id;
         })
@@ -21,12 +22,12 @@ class App extends Component {
         const person = {
             ...this.state.persons[personIndex]
         }
-        person.hobby = event.target.value;
+        person.hobby = event.target.value
 
         const persons = [...this.state.persons]
         persons[personIndex] = person
 
-        this.setState({ persons: persons });
+        this.setState({ persons: persons })
     }
 
     deletePersonHandler = (personIndex) => {
