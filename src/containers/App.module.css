@@ -3,12 +3,13 @@
 }
 
 .block {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .red {
   background-color: red;
-  text-align: center;
+  width: 200px;
 }
 
 
